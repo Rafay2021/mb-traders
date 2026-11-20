@@ -1,0 +1,266 @@
+// use prisma-8
+enum Role {
+  ADMIN
+  USER
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  COD
+  ONLINE
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+enum MessageStatus {
+  UNREAD
+  READ
+  REPLIED
+}
+
+// -----------------------------------------
+// USER
+// -----------------------------------------
+
+model User {
+  id          Int     @id @default(autoincrement())
+  name        String
+  email       String  @unique
+  password    String?
+  role        Role    @default(USER)
+  phoneNumber String?
+
+  orders    Order[]
+  messages  Message[]
+  addresses Address[]
+  cart      Cart?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+}
+
+// -----------------------------------------
+// PRODUCT
+// -----------------------------------------
+
+model Product {
+  id          Int     @id @default(autoincrement())
+  name        String
+  slug        String  @unique
+  description String
+  price         Decimal(precision: 10, scale: 2)
+  discountPrice Decimal(precision: 10, scale: 2)?
+  stock       Int     @default(0)
+  imageUrl    String
+  isActive    Boolean @default(true)
+
+  categoryId Int
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+
+  orderItems OrderItem[]
+  cartItems  CartItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@index([categoryId])
+  @@index([isActive])
+}
+
+// -----------------------------------------
+// CATEGORY
+// -----------------------------------------
+
+model Category {
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  slug        String  @unique
+  description String?
+  imageUrl    String?
+
+  products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+}
+
+// -----------------------------------------
+// ADDRESS
+// -----------------------------------------
+
+model Address {
+  id     Int @id @default(autoincrement())
+  userId Int
+
+  fullName   String
+  phone      String
+  address    String
+  city       String
+  postalCode String?
+  country    String  @default("Pakistan")
+  isDefault  Boolean @default(false)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@index([userId])
+}
+
+// -----------------------------------------
+// CART
+// -----------------------------------------
+
+model Cart {
+  id     Int @id @default(autoincrement())
+  userId Int @unique
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items CartItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+}
+
+// -----------------------------------------
+// CART ITEM
+// -----------------------------------------
+
+model CartItem {
+  id        Int @id @default(autoincrement())
+  cartId    Int
+  productId Int
+  quantity  Int @default(1)
+
+  cart    Cart    @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@unique([cartId, productId])
+  @@index([productId])
+}
+
+// -----------------------------------------
+// ORDER
+// -----------------------------------------
+
+model Order {
+  id          Int    @id @default(autoincrement())
+  orderNumber String @unique
+
+  userId Int
+
+  subtotal        Decimal(precision: 10, scale: 2)
+  shippingFee     Decimal(precision: 10, scale: 2) @default(0)
+  discount        Decimal(precision: 10, scale: 2) @default(0)
+  total           Decimal(precision: 10, scale: 2)
+
+  status        OrderStatus   @default(PENDING)
+  paymentMethod PaymentMethod
+  paymentStatus PaymentStatus @default(PENDING)
+
+  shippingName    String
+  shippingPhone   String
+  shippingAddress String
+  shippingCity    String
+  shippingPostal  String?
+  shippingCountry String  @default("Pakistan")
+
+  user     User        @relation(fields: [userId], references: [id], onDelete: Restrict)
+  items    OrderItem[]
+  payments Payment[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@index([userId])
+  @@index([status])
+  @@index([paymentStatus])
+  @@index([createdAt])
+}
+
+// -----------------------------------------
+// ORDER ITEM
+// -----------------------------------------
+
+model OrderItem {
+  id        Int @id @default(autoincrement())
+  orderId   Int
+  productId Int
+
+  productName  String
+  productImage String?
+
+  quantity Int
+  price        Decimal(precision: 10, scale: 2)
+  subtotal     Decimal(precision: 10, scale: 2)
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product Product @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@unique([orderId, productId])
+  @@index([productId])
+}
+
+// -----------------------------------------
+// PAYMENT
+// -----------------------------------------
+
+model Payment {
+  id      Int @id @default(autoincrement())
+  orderId Int
+
+  provider          String?
+  providerPaymentId String? @unique
+
+  amount            Decimal(precision: 10, scale: 2)
+  status PaymentStatus @default(PENDING)
+
+  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@index([orderId])
+}
+
+// -----------------------------------------
+// MESSAGE
+// -----------------------------------------
+
+model Message {
+  id     Int  @id @default(autoincrement())
+  userId Int?
+
+  email   String
+  subject String
+  message String
+  status  MessageStatus @default(UNREAD)
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @onUpdate(now())
+
+  @@index([userId])
+  @@index([status])
+}

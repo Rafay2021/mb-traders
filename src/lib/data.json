@@ -1,0 +1,752 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "slug": "wireless-bluetooth-headphones",
+    "description": "Comfortable wireless headphones with clear sound.",
+    "price": 4500,
+    "stock": 35,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/wireless-bluetooth-headphones-view-1/800/800",
+      "https://picsum.photos/seed/wireless-bluetooth-headphones-view-2/800/800",
+      "https://picsum.photos/seed/wireless-bluetooth-headphones-view-3/800/800",
+      "https://picsum.photos/seed/wireless-bluetooth-headphones-view-4/800/800",
+      "https://picsum.photos/seed/wireless-bluetooth-headphones-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Smart Watch",
+    "slug": "smart-watch",
+    "description": "Smart watch with fitness and notification features.",
+    "price": 6500,
+    "stock": 24,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/smart-watch-view-1/800/800",
+      "https://picsum.photos/seed/smart-watch-view-2/800/800",
+      "https://picsum.photos/seed/smart-watch-view-3/800/800",
+      "https://picsum.photos/seed/smart-watch-view-4/800/800",
+      "https://picsum.photos/seed/smart-watch-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "slug": "portable-bluetooth-speaker",
+    "description": "Compact speaker for music at home or outdoors.",
+    "price": 3200,
+    "stock": 40,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/portable-bluetooth-speaker-view-1/800/800",
+      "https://picsum.photos/seed/portable-bluetooth-speaker-view-2/800/800",
+      "https://picsum.photos/seed/portable-bluetooth-speaker-view-3/800/800",
+      "https://picsum.photos/seed/portable-bluetooth-speaker-view-4/800/800",
+      "https://picsum.photos/seed/portable-bluetooth-speaker-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Wireless Mouse",
+    "slug": "wireless-mouse",
+    "description": "Ergonomic wireless mouse for everyday use.",
+    "price": 1200,
+    "stock": 60,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/wireless-mouse-view-1/800/800",
+      "https://picsum.photos/seed/wireless-mouse-view-2/800/800",
+      "https://picsum.photos/seed/wireless-mouse-view-3/800/800",
+      "https://picsum.photos/seed/wireless-mouse-view-4/800/800",
+      "https://picsum.photos/seed/wireless-mouse-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "slug": "mechanical-keyboard",
+    "description": "Responsive keyboard for work and gaming.",
+    "price": 5800,
+    "stock": 18,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/mechanical-keyboard-view-1/800/800",
+      "https://picsum.photos/seed/mechanical-keyboard-view-2/800/800",
+      "https://picsum.photos/seed/mechanical-keyboard-view-3/800/800",
+      "https://picsum.photos/seed/mechanical-keyboard-view-4/800/800",
+      "https://picsum.photos/seed/mechanical-keyboard-view-5/800/800"
+    ]
+  },
+  {
+    "name": "USB-C Fast Charger",
+    "slug": "usb-c-fast-charger",
+    "description": "Fast charging adapter for compatible devices.",
+    "price": 1800,
+    "stock": 50,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/usb-c-fast-charger-view-1/800/800",
+      "https://picsum.photos/seed/usb-c-fast-charger-view-2/800/800",
+      "https://picsum.photos/seed/usb-c-fast-charger-view-3/800/800",
+      "https://picsum.photos/seed/usb-c-fast-charger-view-4/800/800",
+      "https://picsum.photos/seed/usb-c-fast-charger-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Power Bank 20000mAh",
+    "slug": "power-bank-20000mah",
+    "description": "Portable power bank for charging on the go.",
+    "price": 4200,
+    "stock": 30,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/power-bank-20000mah-view-1/800/800",
+      "https://picsum.photos/seed/power-bank-20000mah-view-2/800/800",
+      "https://picsum.photos/seed/power-bank-20000mah-view-3/800/800",
+      "https://picsum.photos/seed/power-bank-20000mah-view-4/800/800",
+      "https://picsum.photos/seed/power-bank-20000mah-view-5/800/800"
+    ]
+  },
+  {
+    "name": "LED Desk Lamp",
+    "slug": "led-desk-lamp",
+    "description": "Adjustable LED lamp for your desk.",
+    "price": 2500,
+    "stock": 22,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/led-desk-lamp-view-1/800/800",
+      "https://picsum.photos/seed/led-desk-lamp-view-2/800/800",
+      "https://picsum.photos/seed/led-desk-lamp-view-3/800/800",
+      "https://picsum.photos/seed/led-desk-lamp-view-4/800/800",
+      "https://picsum.photos/seed/led-desk-lamp-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Webcam HD",
+    "slug": "webcam-hd",
+    "description": "HD webcam for online meetings and classes.",
+    "price": 3500,
+    "stock": 16,
+    "categorySlug": "electronics",
+    "images": [
+      "https://picsum.photos/seed/webcam-hd-view-1/800/800",
+      "https://picsum.photos/seed/webcam-hd-view-2/800/800",
+      "https://picsum.photos/seed/webcam-hd-view-3/800/800",
+      "https://picsum.photos/seed/webcam-hd-view-4/800/800",
+      "https://picsum.photos/seed/webcam-hd-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Classic Cotton T-Shirt",
+    "slug": "classic-cotton-t-shirt",
+    "description": "Everyday cotton T-shirt with a comfortable fit.",
+    "price": 1200,
+    "stock": 80,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/classic-cotton-t-shirt-view-1/800/800",
+      "https://picsum.photos/seed/classic-cotton-t-shirt-view-2/800/800",
+      "https://picsum.photos/seed/classic-cotton-t-shirt-view-3/800/800",
+      "https://picsum.photos/seed/classic-cotton-t-shirt-view-4/800/800",
+      "https://picsum.photos/seed/classic-cotton-t-shirt-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Casual Hoodie",
+    "slug": "casual-hoodie",
+    "description": "Soft casual hoodie for cooler days.",
+    "price": 2800,
+    "stock": 35,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/casual-hoodie-view-1/800/800",
+      "https://picsum.photos/seed/casual-hoodie-view-2/800/800",
+      "https://picsum.photos/seed/casual-hoodie-view-3/800/800",
+      "https://picsum.photos/seed/casual-hoodie-view-4/800/800",
+      "https://picsum.photos/seed/casual-hoodie-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Denim Jeans",
+    "slug": "denim-jeans",
+    "description": "Classic denim jeans for everyday wear.",
+    "price": 3200,
+    "stock": 28,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/denim-jeans-view-1/800/800",
+      "https://picsum.photos/seed/denim-jeans-view-2/800/800",
+      "https://picsum.photos/seed/denim-jeans-view-3/800/800",
+      "https://picsum.photos/seed/denim-jeans-view-4/800/800",
+      "https://picsum.photos/seed/denim-jeans-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Running Sneakers",
+    "slug": "running-sneakers",
+    "description": "Lightweight sneakers for everyday activities.",
+    "price": 4800,
+    "stock": 20,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/running-sneakers-view-1/800/800",
+      "https://picsum.photos/seed/running-sneakers-view-2/800/800",
+      "https://picsum.photos/seed/running-sneakers-view-3/800/800",
+      "https://picsum.photos/seed/running-sneakers-view-4/800/800",
+      "https://picsum.photos/seed/running-sneakers-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Leather Wallet",
+    "slug": "leather-wallet",
+    "description": "Minimal wallet with multiple card slots.",
+    "price": 1500,
+    "stock": 45,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/leather-wallet-view-1/800/800",
+      "https://picsum.photos/seed/leather-wallet-view-2/800/800",
+      "https://picsum.photos/seed/leather-wallet-view-3/800/800",
+      "https://picsum.photos/seed/leather-wallet-view-4/800/800",
+      "https://picsum.photos/seed/leather-wallet-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Classic Wrist Watch",
+    "slug": "classic-wrist-watch",
+    "description": "Simple wrist watch with a timeless design.",
+    "price": 3900,
+    "stock": 18,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/classic-wrist-watch-view-1/800/800",
+      "https://picsum.photos/seed/classic-wrist-watch-view-2/800/800",
+      "https://picsum.photos/seed/classic-wrist-watch-view-3/800/800",
+      "https://picsum.photos/seed/classic-wrist-watch-view-4/800/800",
+      "https://picsum.photos/seed/classic-wrist-watch-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Canvas Backpack",
+    "slug": "canvas-backpack",
+    "description": "Everyday backpack for books and essentials.",
+    "price": 2600,
+    "stock": 32,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/canvas-backpack-view-1/800/800",
+      "https://picsum.photos/seed/canvas-backpack-view-2/800/800",
+      "https://picsum.photos/seed/canvas-backpack-view-3/800/800",
+      "https://picsum.photos/seed/canvas-backpack-view-4/800/800",
+      "https://picsum.photos/seed/canvas-backpack-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Baseball Cap",
+    "slug": "baseball-cap",
+    "description": "Casual adjustable cap.",
+    "price": 850,
+    "stock": 55,
+    "categorySlug": "fashion",
+    "images": [
+      "https://picsum.photos/seed/baseball-cap-view-1/800/800",
+      "https://picsum.photos/seed/baseball-cap-view-2/800/800",
+      "https://picsum.photos/seed/baseball-cap-view-3/800/800",
+      "https://picsum.photos/seed/baseball-cap-view-4/800/800",
+      "https://picsum.photos/seed/baseball-cap-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Ceramic Coffee Mug",
+    "slug": "ceramic-coffee-mug",
+    "description": "Reusable ceramic mug for coffee and tea.",
+    "price": 650,
+    "stock": 70,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/ceramic-coffee-mug-view-1/800/800",
+      "https://picsum.photos/seed/ceramic-coffee-mug-view-2/800/800",
+      "https://picsum.photos/seed/ceramic-coffee-mug-view-3/800/800",
+      "https://picsum.photos/seed/ceramic-coffee-mug-view-4/800/800",
+      "https://picsum.photos/seed/ceramic-coffee-mug-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "slug": "stainless-steel-water-bottle",
+    "description": "Reusable bottle for everyday hydration.",
+    "price": 1400,
+    "stock": 48,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/stainless-steel-water-bottle-view-1/800/800",
+      "https://picsum.photos/seed/stainless-steel-water-bottle-view-2/800/800",
+      "https://picsum.photos/seed/stainless-steel-water-bottle-view-3/800/800",
+      "https://picsum.photos/seed/stainless-steel-water-bottle-view-4/800/800",
+      "https://picsum.photos/seed/stainless-steel-water-bottle-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Non-Stick Frying Pan",
+    "slug": "non-stick-frying-pan",
+    "description": "Everyday frying pan for home cooking.",
+    "price": 2200,
+    "stock": 25,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/non-stick-frying-pan-view-1/800/800",
+      "https://picsum.photos/seed/non-stick-frying-pan-view-2/800/800",
+      "https://picsum.photos/seed/non-stick-frying-pan-view-3/800/800",
+      "https://picsum.photos/seed/non-stick-frying-pan-view-4/800/800",
+      "https://picsum.photos/seed/non-stick-frying-pan-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Kitchen Knife Set",
+    "slug": "kitchen-knife-set",
+    "description": "Multi-piece kitchen knife set.",
+    "price": 3500,
+    "stock": 15,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/kitchen-knife-set-view-1/800/800",
+      "https://picsum.photos/seed/kitchen-knife-set-view-2/800/800",
+      "https://picsum.photos/seed/kitchen-knife-set-view-3/800/800",
+      "https://picsum.photos/seed/kitchen-knife-set-view-4/800/800",
+      "https://picsum.photos/seed/kitchen-knife-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Storage Container Set",
+    "slug": "storage-container-set",
+    "description": "Containers for organizing kitchen essentials.",
+    "price": 1800,
+    "stock": 40,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/storage-container-set-view-1/800/800",
+      "https://picsum.photos/seed/storage-container-set-view-2/800/800",
+      "https://picsum.photos/seed/storage-container-set-view-3/800/800",
+      "https://picsum.photos/seed/storage-container-set-view-4/800/800",
+      "https://picsum.photos/seed/storage-container-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Decorative Table Clock",
+    "slug": "decorative-table-clock",
+    "description": "A simple clock for your desk or shelf.",
+    "price": 1600,
+    "stock": 20,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/decorative-table-clock-view-1/800/800",
+      "https://picsum.photos/seed/decorative-table-clock-view-2/800/800",
+      "https://picsum.photos/seed/decorative-table-clock-view-3/800/800",
+      "https://picsum.photos/seed/decorative-table-clock-view-4/800/800",
+      "https://picsum.photos/seed/decorative-table-clock-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Soft Cushion Set",
+    "slug": "soft-cushion-set",
+    "description": "Decorative cushions for your living space.",
+    "price": 2100,
+    "stock": 26,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/soft-cushion-set-view-1/800/800",
+      "https://picsum.photos/seed/soft-cushion-set-view-2/800/800",
+      "https://picsum.photos/seed/soft-cushion-set-view-3/800/800",
+      "https://picsum.photos/seed/soft-cushion-set-view-4/800/800",
+      "https://picsum.photos/seed/soft-cushion-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Laundry Basket",
+    "slug": "laundry-basket",
+    "description": "Lightweight basket for laundry organization.",
+    "price": 1300,
+    "stock": 30,
+    "categorySlug": "home-kitchen",
+    "images": [
+      "https://picsum.photos/seed/laundry-basket-view-1/800/800",
+      "https://picsum.photos/seed/laundry-basket-view-2/800/800",
+      "https://picsum.photos/seed/laundry-basket-view-3/800/800",
+      "https://picsum.photos/seed/laundry-basket-view-4/800/800",
+      "https://picsum.photos/seed/laundry-basket-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Daily Face Cleanser",
+    "slug": "daily-face-cleanser",
+    "description": "Gentle facial cleanser for daily use.",
+    "price": 950,
+    "stock": 45,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/daily-face-cleanser-view-1/800/800",
+      "https://picsum.photos/seed/daily-face-cleanser-view-2/800/800",
+      "https://picsum.photos/seed/daily-face-cleanser-view-3/800/800",
+      "https://picsum.photos/seed/daily-face-cleanser-view-4/800/800",
+      "https://picsum.photos/seed/daily-face-cleanser-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Moisturizing Cream",
+    "slug": "moisturizing-cream",
+    "description": "Daily moisturizing cream.",
+    "price": 1250,
+    "stock": 38,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/moisturizing-cream-view-1/800/800",
+      "https://picsum.photos/seed/moisturizing-cream-view-2/800/800",
+      "https://picsum.photos/seed/moisturizing-cream-view-3/800/800",
+      "https://picsum.photos/seed/moisturizing-cream-view-4/800/800",
+      "https://picsum.photos/seed/moisturizing-cream-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Hair Care Shampoo",
+    "slug": "hair-care-shampoo",
+    "description": "Everyday shampoo for hair cleansing.",
+    "price": 780,
+    "stock": 60,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/hair-care-shampoo-view-1/800/800",
+      "https://picsum.photos/seed/hair-care-shampoo-view-2/800/800",
+      "https://picsum.photos/seed/hair-care-shampoo-view-3/800/800",
+      "https://picsum.photos/seed/hair-care-shampoo-view-4/800/800",
+      "https://picsum.photos/seed/hair-care-shampoo-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Hair Styling Brush",
+    "slug": "hair-styling-brush",
+    "description": "Brush for everyday hair styling.",
+    "price": 550,
+    "stock": 50,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/hair-styling-brush-view-1/800/800",
+      "https://picsum.photos/seed/hair-styling-brush-view-2/800/800",
+      "https://picsum.photos/seed/hair-styling-brush-view-3/800/800",
+      "https://picsum.photos/seed/hair-styling-brush-view-4/800/800",
+      "https://picsum.photos/seed/hair-styling-brush-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Makeup Brush Set",
+    "slug": "makeup-brush-set",
+    "description": "Brush set for applying makeup.",
+    "price": 1700,
+    "stock": 25,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/makeup-brush-set-view-1/800/800",
+      "https://picsum.photos/seed/makeup-brush-set-view-2/800/800",
+      "https://picsum.photos/seed/makeup-brush-set-view-3/800/800",
+      "https://picsum.photos/seed/makeup-brush-set-view-4/800/800",
+      "https://picsum.photos/seed/makeup-brush-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Travel Toiletry Bag",
+    "slug": "travel-toiletry-bag",
+    "description": "Compact organizer for personal care items.",
+    "price": 1100,
+    "stock": 32,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/travel-toiletry-bag-view-1/800/800",
+      "https://picsum.photos/seed/travel-toiletry-bag-view-2/800/800",
+      "https://picsum.photos/seed/travel-toiletry-bag-view-3/800/800",
+      "https://picsum.photos/seed/travel-toiletry-bag-view-4/800/800",
+      "https://picsum.photos/seed/travel-toiletry-bag-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Bath Towel Set",
+    "slug": "bath-towel-set",
+    "description": "Soft towels for everyday bathroom use.",
+    "price": 1900,
+    "stock": 28,
+    "categorySlug": "beauty",
+    "images": [
+      "https://picsum.photos/seed/bath-towel-set-view-1/800/800",
+      "https://picsum.photos/seed/bath-towel-set-view-2/800/800",
+      "https://picsum.photos/seed/bath-towel-set-view-3/800/800",
+      "https://picsum.photos/seed/bath-towel-set-view-4/800/800",
+      "https://picsum.photos/seed/bath-towel-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Yoga Mat",
+    "slug": "yoga-mat",
+    "description": "Comfortable mat for stretching and yoga.",
+    "price": 1800,
+    "stock": 30,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/yoga-mat-view-1/800/800",
+      "https://picsum.photos/seed/yoga-mat-view-2/800/800",
+      "https://picsum.photos/seed/yoga-mat-view-3/800/800",
+      "https://picsum.photos/seed/yoga-mat-view-4/800/800",
+      "https://picsum.photos/seed/yoga-mat-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Sports Water Bottle",
+    "slug": "sports-water-bottle",
+    "description": "Reusable bottle for workouts and outdoor use.",
+    "price": 750,
+    "stock": 55,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/sports-water-bottle-view-1/800/800",
+      "https://picsum.photos/seed/sports-water-bottle-view-2/800/800",
+      "https://picsum.photos/seed/sports-water-bottle-view-3/800/800",
+      "https://picsum.photos/seed/sports-water-bottle-view-4/800/800",
+      "https://picsum.photos/seed/sports-water-bottle-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Skipping Rope",
+    "slug": "skipping-rope",
+    "description": "Adjustable skipping rope for exercise.",
+    "price": 500,
+    "stock": 65,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/skipping-rope-view-1/800/800",
+      "https://picsum.photos/seed/skipping-rope-view-2/800/800",
+      "https://picsum.photos/seed/skipping-rope-view-3/800/800",
+      "https://picsum.photos/seed/skipping-rope-view-4/800/800",
+      "https://picsum.photos/seed/skipping-rope-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Football",
+    "slug": "football",
+    "description": "Durable football for recreational play.",
+    "price": 1600,
+    "stock": 24,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/football-view-1/800/800",
+      "https://picsum.photos/seed/football-view-2/800/800",
+      "https://picsum.photos/seed/football-view-3/800/800",
+      "https://picsum.photos/seed/football-view-4/800/800",
+      "https://picsum.photos/seed/football-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Gym Training Gloves",
+    "slug": "gym-training-gloves",
+    "description": "Training gloves for gym workouts.",
+    "price": 950,
+    "stock": 35,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/gym-training-gloves-view-1/800/800",
+      "https://picsum.photos/seed/gym-training-gloves-view-2/800/800",
+      "https://picsum.photos/seed/gym-training-gloves-view-3/800/800",
+      "https://picsum.photos/seed/gym-training-gloves-view-4/800/800",
+      "https://picsum.photos/seed/gym-training-gloves-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Camping Backpack",
+    "slug": "camping-backpack",
+    "description": "Spacious backpack for outdoor trips.",
+    "price": 5200,
+    "stock": 12,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/camping-backpack-view-1/800/800",
+      "https://picsum.photos/seed/camping-backpack-view-2/800/800",
+      "https://picsum.photos/seed/camping-backpack-view-3/800/800",
+      "https://picsum.photos/seed/camping-backpack-view-4/800/800",
+      "https://picsum.photos/seed/camping-backpack-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Insulated Travel Flask",
+    "slug": "insulated-travel-flask",
+    "description": "Flask for keeping drinks at temperature.",
+    "price": 2100,
+    "stock": 22,
+    "categorySlug": "sports-outdoors",
+    "images": [
+      "https://picsum.photos/seed/insulated-travel-flask-view-1/800/800",
+      "https://picsum.photos/seed/insulated-travel-flask-view-2/800/800",
+      "https://picsum.photos/seed/insulated-travel-flask-view-3/800/800",
+      "https://picsum.photos/seed/insulated-travel-flask-view-4/800/800",
+      "https://picsum.photos/seed/insulated-travel-flask-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Hardcover Notebook",
+    "slug": "hardcover-notebook",
+    "description": "Notebook for notes, ideas and planning.",
+    "price": 450,
+    "stock": 100,
+    "categorySlug": "books-stationery",
+    "images": [
+      "https://picsum.photos/seed/hardcover-notebook-view-1/800/800",
+      "https://picsum.photos/seed/hardcover-notebook-view-2/800/800",
+      "https://picsum.photos/seed/hardcover-notebook-view-3/800/800",
+      "https://picsum.photos/seed/hardcover-notebook-view-4/800/800",
+      "https://picsum.photos/seed/hardcover-notebook-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Premium Pen Set",
+    "slug": "premium-pen-set",
+    "description": "Set of smooth-writing pens.",
+    "price": 600,
+    "stock": 75,
+    "categorySlug": "books-stationery",
+    "images": [
+      "https://picsum.photos/seed/premium-pen-set-view-1/800/800",
+      "https://picsum.photos/seed/premium-pen-set-view-2/800/800",
+      "https://picsum.photos/seed/premium-pen-set-view-3/800/800",
+      "https://picsum.photos/seed/premium-pen-set-view-4/800/800",
+      "https://picsum.photos/seed/premium-pen-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Desk Organizer",
+    "slug": "desk-organizer",
+    "description": "Organizer for stationery and desk accessories.",
+    "price": 950,
+    "stock": 40,
+    "categorySlug": "books-stationery",
+    "images": [
+      "https://picsum.photos/seed/desk-organizer-view-1/800/800",
+      "https://picsum.photos/seed/desk-organizer-view-2/800/800",
+      "https://picsum.photos/seed/desk-organizer-view-3/800/800",
+      "https://picsum.photos/seed/desk-organizer-view-4/800/800",
+      "https://picsum.photos/seed/desk-organizer-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Color Pencil Set",
+    "slug": "color-pencil-set",
+    "description": "Color pencils for drawing and creative projects.",
+    "price": 700,
+    "stock": 50,
+    "categorySlug": "books-stationery",
+    "images": [
+      "https://picsum.photos/seed/color-pencil-set-view-1/800/800",
+      "https://picsum.photos/seed/color-pencil-set-view-2/800/800",
+      "https://picsum.photos/seed/color-pencil-set-view-3/800/800",
+      "https://picsum.photos/seed/color-pencil-set-view-4/800/800",
+      "https://picsum.photos/seed/color-pencil-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Study Table Calendar",
+    "slug": "study-table-calendar",
+    "description": "Compact calendar for desk planning.",
+    "price": 500,
+    "stock": 45,
+    "categorySlug": "books-stationery",
+    "images": [
+      "https://picsum.photos/seed/study-table-calendar-view-1/800/800",
+      "https://picsum.photos/seed/study-table-calendar-view-2/800/800",
+      "https://picsum.photos/seed/study-table-calendar-view-3/800/800",
+      "https://picsum.photos/seed/study-table-calendar-view-4/800/800",
+      "https://picsum.photos/seed/study-table-calendar-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Building Blocks Set",
+    "slug": "building-blocks-set",
+    "description": "Creative building blocks for imaginative play.",
+    "price": 2200,
+    "stock": 20,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/building-blocks-set-view-1/800/800",
+      "https://picsum.photos/seed/building-blocks-set-view-2/800/800",
+      "https://picsum.photos/seed/building-blocks-set-view-3/800/800",
+      "https://picsum.photos/seed/building-blocks-set-view-4/800/800",
+      "https://picsum.photos/seed/building-blocks-set-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Puzzle Game",
+    "slug": "puzzle-game",
+    "description": "Puzzle game for problem-solving fun.",
+    "price": 850,
+    "stock": 30,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/puzzle-game-view-1/800/800",
+      "https://picsum.photos/seed/puzzle-game-view-2/800/800",
+      "https://picsum.photos/seed/puzzle-game-view-3/800/800",
+      "https://picsum.photos/seed/puzzle-game-view-4/800/800",
+      "https://picsum.photos/seed/puzzle-game-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Plush Teddy Bear",
+    "slug": "plush-teddy-bear",
+    "description": "Soft plush toy for gifting and decoration.",
+    "price": 1400,
+    "stock": 25,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/plush-teddy-bear-view-1/800/800",
+      "https://picsum.photos/seed/plush-teddy-bear-view-2/800/800",
+      "https://picsum.photos/seed/plush-teddy-bear-view-3/800/800",
+      "https://picsum.photos/seed/plush-teddy-bear-view-4/800/800",
+      "https://picsum.photos/seed/plush-teddy-bear-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Mini Desk Fan",
+    "slug": "mini-desk-fan",
+    "description": "Compact fan for your desk.",
+    "price": 1900,
+    "stock": 18,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/mini-desk-fan-view-1/800/800",
+      "https://picsum.photos/seed/mini-desk-fan-view-2/800/800",
+      "https://picsum.photos/seed/mini-desk-fan-view-3/800/800",
+      "https://picsum.photos/seed/mini-desk-fan-view-4/800/800",
+      "https://picsum.photos/seed/mini-desk-fan-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Phone Stand",
+    "slug": "phone-stand",
+    "description": "Adjustable stand for smartphones.",
+    "price": 450,
+    "stock": 70,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/phone-stand-view-1/800/800",
+      "https://picsum.photos/seed/phone-stand-view-2/800/800",
+      "https://picsum.photos/seed/phone-stand-view-3/800/800",
+      "https://picsum.photos/seed/phone-stand-view-4/800/800",
+      "https://picsum.photos/seed/phone-stand-view-5/800/800"
+    ]
+  },
+  {
+    "name": "Travel Organizer Pouch",
+    "slug": "travel-organizer-pouch",
+    "description": "Small pouch for organizing travel essentials.",
+    "price": 800,
+    "stock": 40,
+    "categorySlug": "toys-accessories",
+    "images": [
+      "https://picsum.photos/seed/travel-organizer-pouch-view-1/800/800",
+      "https://picsum.photos/seed/travel-organizer-pouch-view-2/800/800",
+      "https://picsum.photos/seed/travel-organizer-pouch-view-3/800/800",
+      "https://picsum.photos/seed/travel-organizer-pouch-view-4/800/800",
+      "https://picsum.photos/seed/travel-organizer-pouch-view-5/800/800"
+    ]
+  }
+]
