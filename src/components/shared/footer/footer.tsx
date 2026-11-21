@@ -52,7 +52,7 @@ const navLink = [
 
 export default function Footer() {
   return (
-    <footer className='mt-auto bg-primary'>
+    <footer className='mt-auto bg-secondary'>
       <div className='container'>
         <FooterTop />
 
@@ -117,14 +117,14 @@ interface FooterColumnProps {
 
 function FooterColumn({ title, links }: FooterColumnProps) {
   return (
-    <div className='flex min-w-0 flex-col items-center justify-center gap-3 text-center sm:items-start sm:text-left'>
-      <h3 className='mb-2 text-xl font-bold text-black'>{title}</h3>
+    <div className='flex min-w-0 flex-col items-center  gap-3 text-center sm:items-start sm:text-left'>
+      <h3 className='mb-2 text-xl font-bold '>{title}</h3>
 
       {links.map((link) => (
         <Link
           key={link.name}
           href={link.path}
-          className='text-sm transition-colors hover:text-black/60'>
+          className='text-sm transition-colors '>
           {link.name}
         </Link>
       ))}
@@ -137,9 +137,9 @@ function NewsLetter() {
     <Card className='flex flex-col gap-8 rounded-xl bg-black/10 px-5 py-8 sm:px-8 md:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
       {/* Store information */}
       <div className='flex min-w-0 flex-1 flex-col items-center gap-3 text-center lg:items-start lg:text-left'>
-        <h3 className='text-2xl font-bold text-black sm:text-3xl'>Store</h3>
+        <h3 className='text-2xl font-bold  sm:text-3xl'>Store</h3>
 
-        <p className='max-w-md text-sm leading-6 text-black/70'>
+        <p className='max-w-md text-sm leading-6 '>
           Discover the latest trends, explore quality products, and enjoy a
           seamless shopping experience. We bring everything you need together in
           one place.
@@ -149,29 +149,31 @@ function NewsLetter() {
       {/* Newsletter information and form */}
       <div className='flex min-w-0 flex-1 flex-col gap-4'>
         <div className='flex flex-col gap-2 text-center lg:text-left'>
-          <h4 className='text-xl font-bold text-black sm:text-2xl'>
+          <h4 className='text-xl font-bold  sm:text-2xl'>
             Sign Up To Our Newsletter
           </h4>
 
-          <p className='text-sm text-black/70'>
+          <p className='text-sm '>
             Be the first to know. Subscribe to our newsletter today.
           </p>
         </div>
 
-        <form className='flex w-full flex-col gap-3 sm:flex-row'>
-          <Input
-            type='email'
-            required
-            placeholder='Your email address'
-            className='h-11 w-full bg-white'
-          />
+        <form className=' flex w-full flex-col gap-3 sm:flex-row'>
+          <div className='w-full relative'>
+            <Input
+              type='email'
+              required
+              placeholder='Your email address'
+              className=' h-12 w-full bg-white pl-5 py-4'
+            />
 
-          <Button
-            type='submit'
-            variant='secondary'
-            className='h-11 w-full shrink-0 sm:w-auto'>
-            Sign Up
-          </Button>
+            <Button
+              type='submit'
+              variant='default'
+              className='text-foreground absolute bottom-45 right-2 top-1.5 w-full shrink-0 sm:w-auto text-white'>
+              Sign Up
+            </Button>
+          </div>
         </form>
       </div>
     </Card>

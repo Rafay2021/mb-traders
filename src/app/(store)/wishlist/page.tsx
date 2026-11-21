@@ -1,3 +1,5 @@
-export default function CartPage() {
-  return <div>CartPage</div>;
+import { WishlistPage } from '@/modules/wishlist/components/wishlist-page';
+
+export default function Page() {
+  return <WishlistPage />;
 }

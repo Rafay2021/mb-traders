@@ -32,7 +32,6 @@ export default function CardWrapper({
         </CardHeader>
         <CardContent>{children}</CardContent>
       </Card>
-      {/* {cardBottom ? <CardBottom /> : <div />} */}
     </div>
   );
 }

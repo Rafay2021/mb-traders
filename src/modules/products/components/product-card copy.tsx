@@ -1,10 +1,12 @@
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'motion/react';
+import { Heart, ShoppingBag, Star, ArrowUpRight } from 'lucide-react';
+import { useState } from 'react';
 import type { Product } from '@/lib/products';
 import { formatPrice } from '@/lib/products';
-import { ArrowUpRight, Heart, ShoppingBag, Star } from 'lucide-react';
-import { motion } from 'motion/react';
-import Link from 'next/link';
-import { useState } from 'react';
+import { useStore } from '@/provider/store-provider';
 
 export function ProductCard({
   product,
@@ -13,7 +15,8 @@ export function ProductCard({
   product: Product;
   index?: number;
 }) {
-  const [liked, setLiked] = useState(false);
+  const { isWished, toggleWishlist, addToCart } = useStore();
+  const liked = isWished(product.id);
   const [added, setAdded] = useState(false);
   return (
     <motion.article
@@ -26,12 +29,13 @@ export function ProductCard({
       <div className='relative overflow-hidden rounded-[20px] bg-[#edf0f6]'>
         <Link
           href={`/products/${product.slug}`}
-          className='block aspect-[4/4.55] overflow-hidden'>
-          <img
+          className='relative block aspect-[4/4.55] overflow-hidden'>
+          <Image
             src={product.image}
             alt={product.name}
-            className='product-image h-full w-full object-cover'
-            loading='lazy'
+            fill
+            sizes='(min-width:1280px) 22vw, (min-width:640px) 30vw, 50vw'
+            className='product-image object-cover'
           />
         </Link>
         {product.badge && (
@@ -40,8 +44,9 @@ export function ProductCard({
           </span>
         )}
         <button
-          onClick={() => setLiked(!liked)}
-          aria-label='Add to wishlist'
+          onClick={() => toggleWishlist(product)}
+          aria-pressed={liked}
+          aria-label={liked ? 'Remove from wishlist' : 'Add to wishlist'}
           className={`absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/90 shadow-sm transition hover:scale-110 ${liked ? 'text-rose-500' : 'text-slate-600'}`}>
           <Heart
             size={17}
@@ -50,11 +55,13 @@ export function ProductCard({
         </button>
         <div className='absolute inset-x-3 bottom-3 translate-y-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100'>
           <button
+            disabled={product.stock === 0}
             onClick={() => {
+              addToCart(product);
               setAdded(true);
               setTimeout(() => setAdded(false), 1300);
             }}
-            className='flex w-full items-center justify-center gap-2 rounded-full bg-slate-900 py-3 text-xs font-semibold text-white shadow-lg transition hover:bg-violet-700'>
+            className='flex w-full items-center justify-center gap-2 rounded-full bg-slate-900 py-3 text-xs font-semibold text-white shadow-lg transition hover:bg-violet-700 disabled:opacity-50'>
             <ShoppingBag size={15} />
             {added ? 'Added to bag' : 'Add to bag'}
           </button>

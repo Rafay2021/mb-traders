@@ -1,5 +1,5 @@
-import { ProductDetailPage } from '@/components/storefront/product-detail-page';
 import { getProductBySlug } from '@/lib/products';
+import { ProductDetailPage } from '@/modules/products/components/product-detail-page';
 import { notFound } from 'next/navigation';
 
 export default async function Page({

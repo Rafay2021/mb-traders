@@ -1,3 +1,5 @@
-export default function CartPage() {
-  return <div>CartPage</div>;
+import { CartPage } from '@/modules/cart/components/cart-page';
+
+export default function Page() {
+  return <CartPage />;
 }

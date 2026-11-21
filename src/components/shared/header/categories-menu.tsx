@@ -70,13 +70,13 @@ const categories: Category[] = [
       {
         id: 'mens-clothing',
         name: "Men's Clothing",
-        href: '/categories/fashion/mens-clothing',
+        href: '/fashion/mens-clothing',
         image: '/images/mens-clothing.jpg',
       },
       {
         id: 'womens-clothing',
         name: "Women's Clothing",
-        href: '/categories/fashion/womens-clothing',
+        href: '/fashion/womens-clothing',
         image: '/images/womens-clothing.jpg',
       },
     ],
@@ -84,7 +84,7 @@ const categories: Category[] = [
   {
     id: 'home-lifestyle',
     name: 'Home & Lifestyle',
-    href: '/categories/home-lifestyle',
+    href: '/home-lifestyle',
     products: [
       {
         id: 'furniture',
@@ -102,23 +102,10 @@ const categories: Category[] = [
   },
 ];
 
-export default function CategoriesMenu() {
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
-
-          <NavigationMenuContent>
-            <Categories />
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
-}
-
-function Categories() {
+type CategoriesProps = {
+  setState?: (open: boolean) => void;
+};
+export function Categories({ setState }: CategoriesProps) {
   const [activeCategory, setActiveCategory] = React.useState<string>(
     categories[0].id,
   );
@@ -126,9 +113,13 @@ function Categories() {
   const selectedCategory = categories.find(
     (category) => category.id === activeCategory,
   );
-
+  function handleClick() {
+    setState?.(false);
+  }
   return (
-    <div className='grid w-150 grid-cols-[220px_1fr]'>
+    <div
+      onClick={handleClick}
+      className='grid md:w-150 md:grid-cols-[220px_1fr] '>
       {/* Categories List */}
       <div className='border-r p-2'>
         {categories.map((category) => {
@@ -197,5 +188,22 @@ function Categories() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function CategoriesMenu() {
+  return (
+    <NavigationMenu>
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger
+            render={<Button variant={'secondary'}>Categories</Button>}
+          />
+          <NavigationMenuContent>
+            <Categories />
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   );
 }

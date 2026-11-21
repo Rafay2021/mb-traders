@@ -1,3 +1,5 @@
-export default function ContactPage() {
-  return <div>ContactPage</div>;
+import { CheckoutPage } from '@/modules/checkout/components/checkout-page';
+
+export default function Page() {
+  return <CheckoutPage />;
 }

@@ -1,10 +1,4 @@
-import {
-  CreditCardIcon,
-  LogOutIcon,
-  SettingsIcon,
-  User,
-  UserIcon,
-} from 'lucide-react';
+import { LogOutIcon, SettingsIcon, User, UserIcon } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -24,7 +18,7 @@ export function ProfileDropdown() {
             variant='outline'
             size='icon-lg'
             aria-label='Open profile menu'
-            className='shrink-0'>
+            className='shrink-0 '>
             <User className='size-5' />
           </Button>
         }
@@ -34,10 +28,7 @@ export function ProfileDropdown() {
           <UserIcon />
           Profile
         </DropdownMenuItem>
-        <DropdownMenuItem>
-          <CreditCardIcon />
-          Billing
-        </DropdownMenuItem>
+
         <DropdownMenuItem>
           <SettingsIcon />
           Settings

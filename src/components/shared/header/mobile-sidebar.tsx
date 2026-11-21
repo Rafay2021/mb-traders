@@ -1,17 +1,22 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerTrigger,
 } from '@/components/ui/drawer';
 import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import { Categories } from './categories-menu';
 
 export default function MobileSidebar() {
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <Drawer
+      open={open}
+      onOpenChange={setOpen}
       modal={false}
       showSwipeHandle
       disablePointerDismissal
@@ -22,12 +27,12 @@ export default function MobileSidebar() {
             variant='outline'
             size='icon-lg'
             aria-label='Open menu'
-            className='shrink-0'>
+            className='shrink-0 '>
             <Menu className='size-5' />
           </Button>
         }
       />
-      <DrawerContent>
+      <DrawerContent className='w-full'>
         <DrawerHeader>
           <DrawerClose
             render={
@@ -40,8 +45,9 @@ export default function MobileSidebar() {
               />
             }></DrawerClose>
         </DrawerHeader>
-        <div className='flex-1 p-4'>content</div>
-        <DrawerFooter></DrawerFooter>
+        <div className='flex-1 p-4'>
+          <Categories setState={setOpen} />
+        </div>
       </DrawerContent>
     </Drawer>
   );

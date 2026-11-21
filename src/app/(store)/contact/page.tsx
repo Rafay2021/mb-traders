@@ -1,3 +1,3 @@
-export default function CheckoutPage() {
-  return <div>CheckoutPage</div>;
+export default function ContactPage() {
+  return <div>ContactPage</div>;
 }

@@ -11,14 +11,15 @@ import SearchForm from './search-form';
 
 export default async function Header() {
   return (
-    <header className='sticky top-0 z-40 w-full border-b bg-white/80 dark:bg-black/10 backdrop-blur-xl'>
+    <header className='sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-xl'>
       <div className='container'>
         <div className='flex flex-col gap-4 py-4 lg:hidden'>
           <div className='flex w-full items-center gap-3'>
             <Logo />
             <SearchForm />
-            <MobileSidebar />
+            <ThemeToggle />
             <ProfileDropdown />
+            <MobileSidebar />
           </div>
         </div>
 
@@ -47,7 +48,7 @@ function CartButton() {
       nativeButton={false}
       variant='outline'
       size='icon-lg'
-      className='shrink-0'
+      className='shrink-0 '
       render={
         <Link
           href='/'

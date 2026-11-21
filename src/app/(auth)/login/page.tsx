@@ -1,9 +1,17 @@
-import LoginForm from '@/modules/auth/components/login-form';
+import { LoginPage } from '@/modules/auth/components/login-page';
+import { Suspense } from 'react';
 
-export default function LoginPage() {
+export default function LoginPagee() {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen'>
-      <LoginForm />
+      <Suspense fallback={null}>
+        <LoginPage />
+      </Suspense>
     </div>
   );
+}
+
+{
+  /* <LoginForm />
+   */
 }
